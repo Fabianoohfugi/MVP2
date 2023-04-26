@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estoque de Material Escolar</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+  </head>
+  <body>
+    <h1>Estoque de Material Escolar</h1>
+    <form id="form">
+      <label for="productName">Nome do Produto:</label>
+      <input type="text" id="productName" required />
+  <label for="productQuantity">Quantidade:</label>
+  <input type="number" id="productQuantity" required />
+
+  <label for="productPrice">Preço:</label>
+  <input type="number" id="productPrice" step="0.01" required />
+
+  <button type="submit">Adicionar Produto</button>
+</form>
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Preço</th>
+      <th>Total</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Total:</td>
+      <td id="total"></td>
+      <td>
+        <button class="delete-button" id="${id}">Excluir</button>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+<script src="../static/script.js"></script>
+  </body>
+</html>

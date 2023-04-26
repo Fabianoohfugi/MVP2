@@ -1,0 +1,74 @@
+/* Fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Define as cores */
+:root {
+  --cor-primaria: #2d2d2d;
+  --cor-secundaria: #e3e3e3;
+  --cor-terciaria: #0f9d58;
+}
+/* Estilo geral da página */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  padding: 0;
+  margin: 0;
+}
+/* Estilo do título */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  max-width: 400px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+input[type="submit"] {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #0b7d43;
+}
+/* Estilo da tabela */
+table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 2px solid var(--cor-primaria);
+}
+th {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+tfoot td {
+  font-weight: bold;
+}
