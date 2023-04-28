@@ -35,4 +35,12 @@ O projeto se trata de uma lista de materia escolar.
  
  pip install -U flask-openapi3
  
+ pip install flask-restful
+ 
+ pip install flask-swagger-ui
+
+ pip install flask-swagger-ui
+
+
+ 
 ```
