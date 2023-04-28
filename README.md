@@ -33,4 +33,6 @@ O projeto se trata de uma lista de materia escolar.
  
  pip install sqlalchemy.orm
  
+ pip install -U flask-openapi3
+ 
 ```
